@@ -1,6 +1,6 @@
-<img width="512" height="512" alt="logo snoflake" src="https://github.com/user-attachments/assets/4c29973e-9a1b-4e09-b311-a3cc5cbecc7f" />
+<img width="150" height="150" alt="snowflake logo github small`" src="https://github.com/user-attachments/assets/a43a1765-080c-486f-8c58-ae26a4ff7ff2" />
 
-# Snowflake Proxy
+# Snowflak Proxy
 
 ## Overview
 
