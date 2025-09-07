@@ -1,30 +1,36 @@
-# Snowflake internet sharing
+<img width="512" height="512" alt="logo snoflake" src="https://github.com/user-attachments/assets/4c29973e-9a1b-4e09-b311-a3cc5cbecc7f" />
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
-
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/rxutns-projects/v0-snowflake)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/ufr9xX8VHvW)
+# Snowflake Proxy
 
 ## Overview
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+Censorship is no longer a distant problem — it’s a lived reality for millions. In countries with repressive regimes, accessing free information is a dangerous act.
+The internet, once a tool of connection and liberation, is increasingly weaponized by authoritarian governments to surveil, block, and silence dissent. But you can help change that — right now, and with minimal effort — thanks to [Snowflake](https://snowflake.torproject.org/). 
 
-## Deployment
+## What is Snowflake?
 
-Your project is live at:
+Snowflake is a lightweight, volunteer-powered proxy system that helps people bypass internet censorship.
+It works by using [WebRTC](https://en.wikipedia.org/wiki/WebRTC) (a peer-to-peer communication technology) to create a temporary bridge between users living under censorship and the [Tor network](https://torproject.org/) — the global system for anonymous, uncensored browsing.
+When you activate Snowflake in your browser, you temporarily turn your device into a proxy node. Censored users can connect through your Snowflake, and from there, reach the open internet via Tor — securely and anonymously.
 
-**[https://vercel.com/rxutns-projects/v0-snowflake](https://vercel.com/rxutns-projects/v0-snowflake)**
 
-## Build your app
+## Why does this matter?
 
-Continue building your app on:
+In places like Iran, Russia, China, and many others, people are routinely cut off from essential services, news outlets, and communication platforms.
+These aren’t just inconveniences — they’re life-altering restrictions that limit access to truth, connection, and safety. For activists, journalists, artists, students, and everyday citizens, tools like Tor are often the only way to stay informed and speak freely.
+But Tor needs [bridges](https://bridges.torproject.org/) — access points that are hard to block and easy to use.
+Snowflake offers just that: thousands of small, temporary proxies that are nearly impossible for censors to detect or block en masse.
 
-**[https://v0.app/chat/projects/ufr9xX8VHvW](https://v0.app/chat/projects/ufr9xX8VHvW)**
 
-## How It Works
+## What do I do, exactly?
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+By running [Snowflake](https://snowflake.torproject.org/) on your device, you’re simply donating a small slice of your internet connection to help someone else reach the open web.
+**You don’t host any content, you’re not responsible for what others do, and your own internet usage is not impacted in any noticeable way.**
+**You remain anonymous. The person on the other end remains anonymous.**
+It’s a privacy-respecting, risk-free way to make a real-world difference — especially for those of us privileged enough to live beyond the reach of digital oppression.
+
+## Disclaimer
+
+This project is independently maintained and is not affiliated with the [Tor Project](https://torproject.org/).
+
+[Open Source](https://github.com/hopeugetherpes/Snowflake) - No copyright / public domain [(CCO)](https://creativecommons.org/public-domain/cc0/)
