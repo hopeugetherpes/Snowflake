@@ -219,7 +219,16 @@ export default function SnowflakePage() {
                 to turn your everyday browser into a Snowflake Proxy with peace of mind without even noticing!
               </p>
 
-              
+              <div className="flex justify-center">
+                <iframe
+                  src="https://snowflake.torproject.org/embed.html"
+                  width="320"
+                  height="240"
+                  frameBorder="0"
+                  scrolling="no"
+                  title="Snowflake Proxy Widget"
+                ></iframe>
+              </div>
             </div>
           </section>
 
