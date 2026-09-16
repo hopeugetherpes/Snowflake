@@ -1,9 +1,6 @@
 # 🧅 Snowflake Proxy — Help Fight Censorship
 
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://snowflake.anatole.co)
-
-
 ## Help Fight Censorship
 
 ---
@@ -77,3 +74,35 @@ No. The live widget and extensions work out of the box.
 **Is this affiliated with the Tor Project?**  
 No—this project is independently independently maintained by a volunteer: [me lol.](https://github.com/hopeugetherpes/) and **not affiliated** with the [Tor Project.](https://www.torproject.org/)
 
+---
+
+# ▲ Vercel compatibility
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fhopeugetherpes%2FSnowflake)
+
+The repository includes a dedicated Vercel build command:
+
+```json
+"vercel-build": "next build"
+```
+
+That means the website can be imported into Vercel as a normal Git repository and built as a Next.js project.
+
+A typical deployment flow is:
+
+```text
+GitHub repository
+        │
+        ▼
+      Vercel
+        │
+        ▼
+Automatic Next.js build
+        │
+        ▼
+Production deployment
+```
+
+Once the GitHub repository is connected to Vercel, future pushes can also trigger new deployments according to the Vercel project's Git settings.
+
+No DadGPT-specific backend service is required to deploy the documentation website.
