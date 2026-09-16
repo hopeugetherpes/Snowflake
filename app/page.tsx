@@ -32,12 +32,7 @@ export default function SnowflakePage() {
         {/* Header with Tor Logo */}
         <div className="text-center mb-8">
           <div className="w-[150px] h-[150px] mx-auto mb-4 flex items-center justify-center">
-            <a
-              href="https://snowflake.anatole.co/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-opacity hover:opacity-80"
-            >
+            <a href="/" className="transition-opacity hover:opacity-80">
               <Image
                 src="/tor-logo.png"
                 alt="Tor Onion Logo"
