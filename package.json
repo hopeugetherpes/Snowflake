@@ -9,7 +9,6 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "tsc --noEmit",
-    "start": "npx serve out",
     "vercel-build": "next build"
   },
   "dependencies": {
