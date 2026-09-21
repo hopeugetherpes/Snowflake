@@ -1,108 +1,48 @@
-# 🧅 Snowflake Proxy — Help Fight Censorship
+# 🧅 Snowflake Proxy
 
-
-## Help Fight Censorship
-
----
- 
-Censorship is no longer a distant problem — it's a lived reality for millions. In countries with repressive regimes, accessing free information is a dangerous act.
-
-The internet, once a tool of connection and liberation, is increasingly weaponized by authoritarian governments to surveil, block, and silence dissent. But you can help change that — right now, and with minimal effort — thanks to [Snowflake](https://snowflake.torproject.org/).
-
----
-
-## What is Snowflake?
-
-Snowflake is a lightweight, volunteer-powered proxy system that helps people bypass internet censorship. It works by using [WebRTC](https://webrtc.org/) (a peer-to-peer communication technology) to create a temporary bridge between users living under censorship and the [Tor network](https://en.wikipedia.org/wiki/Tor_(network)) — the global system for anonymous, uncensored browsing.
-
-When you activate Snowflake in your browser, you temporarily turn your device into a proxy node.
-Censored users can connect through your Snowflake, and from there, reach the open internet via Tor — securely and anonymously.
-
----
-
-## Why does this matter?
-
-In places like Iran, Russia, China, and many others, people are routinely cut off from essential services, news outlets, and communication platforms.
-These aren't just inconveniences — they're life-altering restrictions that limit access to truth, connection, and safety.
-For activists, journalists, artists, students, and everyday citizens, tools like Tor are often the only way to stay informed and speak freely.
-
-But Tor needs [bridges](https://bridges.torproject.org/) — access points that are hard to block and easy to use.
-Snowflake offers just that: thousands of small, temporary proxies that are nearly impossible for censors to detect or block en masse.
-
----
-
-## What you do, exactly?
-
-By running Snowflake on your device, you're simply donating a small slice of your internet connection to help someone else reach the open web.
-
-When you run **Snowflake**:
-
-- You donate a tiny slice of your internet connection to help someone else reach the open web.
-- You **do NOT host content**
-- You **are NOT responsible** for what others do.
-- Both you and the censored user remain **anonymous**.
-- Your own connection impact is typically negligible.
-
-It's a privacy-respecting, risk-free way to make a real-world difference — especially for those of us privileged enough to live beyond the reach of digital oppression.
-
----
-
-## Start helping in seconds
-
-- **Use Snowflake.anatole.co:** Keep this page open and click **Start Snowflake**  
-  Live proxy: (https://snowflake.anatole.co)
-- **Prefer a browser extension?**  
-  Install Snowflake for:
-  - [Firefox and its forks - LibreWolf, Mullvad, Zen, Floorp...](https://addons.mozilla.org/en-US/firefox/addon/torproject-snowflake/) 
-  - [Chromium its forks - Edge, Brave, Vivaldi...](https://chrome.google.com/webstore/detail/snowflake/mafpmfcccpbjnhfhjnllmmalhifmlcie) 
-
-Keep the tab open (or leave the extension enabled) to continue helping. You can close it anytime.
-
----
-
-## FAQ
-
-**Does this slow my internet?**  
-Generally, you won’t even notice. Snowflake uses modest bandwidth and connections are short-lived.
-
-**Is it safe and private for me?**  
-Yes. Your IP is only seen as a Snowflake proxy; traffic is end-to-end toward Tor. You’re not hosting or monitoring content.
-
-**Do I need to configure anything?**  
-No. The live widget and extensions work out of the box.
-
-**Is this affiliated with the Tor Project?**  
-No—this project is independently independently maintained by a volunteer: [me lol.](https://github.com/hopeugetherpes/) and **not affiliated** with the [Tor Project.](https://www.torproject.org/)
-
----
-
-# ▲ Vercel compatibility
+A privacy-conscious landing page for the [Tor Project's Snowflake](https://snowflake.torproject.org/) volunteer proxy widget.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fhopeugetherpes%2FSnowflake)
 
-The repository includes a dedicated Vercel build command:
+Live site: [snowflake.anatole.co](https://snowflake.anatole.co/)
 
-```json
-"vercel-build": "next build"
+## What this repository does
+
+This site explains Snowflake and lets a visitor load the official Tor Project widget only after explicit consent. Loading the widget connects the browser to `embed-snowflake.torproject.org`; enabling it there donates bandwidth through WebRTC.
+
+A Snowflake volunteer is an entry proxy, not a Tor exit relay. Even so, volunteering uses the browser's network connection and public IP address. Check local law, network policy, and data limits before enabling it.
+
+## Privacy and security
+
+- No analytics, advertising, account system, first-party cookies, local storage, database, or application backend.
+- The Tor widget is not requested until the visitor clicks **Load the official widget**.
+- The iframe uses a no-referrer policy and a restrictive sandbox.
+- The site is a static export with no server-side application runtime.
+- Security headers are defined in `vercel.json`.
+- Image metadata that exposed an author name and Canva/Facebook identifiers has been removed without re-encoding the pixels.
+- Dependencies are intentionally minimal and pinned by `package-lock.json`.
+- Dependabot and CI check future dependency updates, types, builds, and production advisories.
+- No environment variables are required.
+
+The hosting provider may still retain ordinary access logs under its own policy. The Tor Project receives a request only after the widget is loaded.
+
+## Local development
+
+Requires Node.js 20.9 or newer and npm.
+
+```bash
+npm ci
+npm run lint
+npm run build
+npm run dev
 ```
 
-That means the website can be imported into Vercel as a normal Git repository and built as a Next.js project.
+## Deploy with Vercel
 
-A typical deployment flow is:
+Use the button at the top of this README. It clones this public repository into your GitHub account and creates a Vercel project using the included `vercel-build` script. No environment variables or external services are required.
 
-```text
-GitHub repository
-        │
-        ▼
-      Vercel
-        │
-        ▼
-Automatic Next.js build
-        │
-        ▼
-Production deployment
-```
+The production build emits a static `out/` directory. Vercel automatically serves it and applies the security headers from `vercel.json`.
 
-Once the GitHub repository is connected to Vercel, future pushes can also trigger new deployments according to the Vercel project's Git settings.
+## License
 
-No DadGPT-specific backend service is required to deploy the documentation website.
+[MIT](LICENSE)

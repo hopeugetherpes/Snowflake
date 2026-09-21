@@ -1,34 +1,33 @@
-import type React from "react"
 import type { Metadata } from "next"
-import { Archivo } from "next/font/google"
-import { Suspense } from "react"
+import type { ReactNode } from "react"
+
 import "./globals.css"
 
-const archivo = Archivo({
-  subsets: ["latin"],
-  variable: "--font-archivo",
-})
-
 export const metadata: Metadata = {
-  title: "Snowflake Proxy - Help Fight Censorship",
+  metadataBase: new URL("https://snowflake.anatole.co"),
+  title: "Snowflake Proxy — Help people access the Tor network",
   description:
-    "Help people in repressive countries bypass internet censorship by running a Snowflake proxy in your browser. Support digital freedom and privacy rights.",
-  keywords: ["Snowflake", "Tor", "censorship", "privacy", "proxy", "freedom", "internet"],
+    "Learn about Tor Snowflake and choose whether to load the official volunteer proxy widget.",
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: "/favicon.svg",
+  },
+  robots: {
+    follow: true,
+    index: true,
   },
 }
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: ReactNode
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${archivo.variable}`}>
-        <Suspense fallback={null}>{children}</Suspense>
-      </body>
+      <body>{children}</body>
     </html>
   )
 }
