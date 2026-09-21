@@ -4,7 +4,6 @@ A privacy-conscious landing page for the [Tor Project's Snowflake](https://snowf
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fhopeugetherpes%2FSnowflake)
 
-Live site: [snowflake.anatole.co](https://snowflake.anatole.co/)
 
 ## What this repository does
 
