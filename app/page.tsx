@@ -76,9 +76,15 @@ export default function SnowflakePage() {
           <section aria-labelledby="official-widget">
             <h2 id="official-widget">Official Tor Project widget</h2>
             <p>
-              For privacy, the third-party iframe is not contacted until you
-              choose to load it. The Tor widget then asks separately before
-              enabling proxy service.
+              Click Load the official widget, then turn its Enabled switch on
+              to start the proxy. The Tor widget handles the actual WebRTC
+              connections and displays their status. This page does not
+              simulate activity or generate connection counts.
+            </p>
+            <p>
+              For privacy, the Tor Project is only contacted after you choose
+              to load its widget. Keep the page open and your computer online
+              while volunteering.
             </p>
             <SnowflakeWidget />
             <p>
